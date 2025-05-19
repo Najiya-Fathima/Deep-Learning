@@ -35,7 +35,7 @@ else:
     tf.config.threading.set_inter_op_parallelism_threads(4)
     tf.config.threading.set_intra_op_parallelism_threads(4)
 
-data_dir = r'D:\DUK\SEM 2\Deep learning\project\driver_drowiness_project\dataset_new'
+data_dir = r'D:\dataset_new' #path of the dataset
 
 train_dir = os.path.join(data_dir, "train")
 test_dir = os.path.join(data_dir, 'test')

@@ -7,13 +7,13 @@ from tensorflow.keras.applications.efficientnet import preprocess_input
 from eye_crop_best import detect_best_eye
 
 # Load your trained model
-model = load_model('best_model.h5')
+model = load_model('best_model.h5') # Give path of the model
 
 # Define class names
 class_names = ['Closed', 'Open', 'no_yawn', 'yawn']
 
 # Load and preprocess the image
-image_path = r'testing images\woman-tired-all-the-time-1280x853.webp' 
+image_path = r'testing_images\image.png' # path of the testing image
 image = cv2.imread(image_path)
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 image = cv2.resize(image, (224, 224))
